@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Speech Recognition - Dictate Sentence by Sentence - Vue</title>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"><link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900'>
+<link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/@mdi/font@3.x/css/materialdesignicons.min.css'>
+<link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/vuetify@2.x/dist/vuetify.min.css'><link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div id="app">
+  <v-app>
+    <v-container>
+      <v-row align="stretch" justify="center" align-content="start">
+        <v-spacer></v-spacer>
+
+        <h2>Dictate Sentence By Sentence</h2>
+        <v-spacer></v-spacer>
+      </v-row>
+      <v-row align="stretch" justify="center" align-content="start" class='mt-2'>
+        <v-btn class='ml-2' d-flex dark @click.stop="toggle ? endSpeechRecognition() : startSpeechRecognition()" icon :color="!toggle ? 'primary' : speaking ? 'red lighten-2' : 'red darken-4'" :class="{ pulse: toggle }">
+          <v-icon>{{ toggle ? 'mic_off' : 'mic' }}</v-icon>
+        </v-btn>
+        <p class="mt-1 ml-2" v-show="toggle">Listening...Click mic after each sentence.</p>
+        <p class="mt-1 ml-2" v-show="!toggle && sentences == []">Click small mic to start Dictation</p>
+        <p class="mt-1 ml-2" v-show="!toggle && sentences != []">Click small mic to add a sentence.</p>
+        <v-spacer></v-spacer>
+        <p class="mt-1 blue--text" v-show="toggle">{{ runtimeTranscription }}</p>
+        <v-spacer></v-spacer>
+
+      </v-row>
+
+      <v-row align="stretch" justify="center" align-content="start">
+        <v-col cols="12" sm="12" md="12" lg="12" xl="12" align-self="auto">
+          <v-textarea rows="5" outlined counter :rules="rules" :label="info" v-model="text">
+          </v-textarea>
+        </v-col>
+      </v-row>
+      <v-row>
+        <v-btn class='ml-4' v-if='hasText' @click='cleanReset' color='red' small dense>Reset</v-btn >
+
+      </v-row>
+    </v-container>
+  </v-app>
+</div>
+
+<!-- partial -->
+  <script src='https://cdn.jsdelivr.net/npm/vue@2.x/dist/vue.js'></script>
+<script src='https://cdn.jsdelivr.net/npm/vuetify@2.x/dist/vuetify.js'></script><script  src="./script.js"></script>
+
+</body>
+</html>
