@@ -36,15 +36,15 @@
         <form class="forms_form">
           <fieldset class="forms_fieldset">
             <div class="forms_field">
-              <input type="email" placeholder="Email" class="forms_field-input" required autofocus />
+              <input type="email" placeholder="Email" class="forms_field-input" id="emailin" required autofocus />
             </div>
             <div class="forms_field">
-              <input type="password" placeholder="Password" class="forms_field-input" required />
+              <input type="password" placeholder="Password" class="forms_field-input" id="passin" required />
             </div>
           </fieldset>
           <div class="forms_buttons">
             <button type="button" class="forms_buttons-forgot">Forgot password?</button>
-            <a href="main/main-card.html"><input  value="Log In" class="forms_buttons-action"></a>
+           <input  value="Log In" onclick="signin()" class="forms_buttons-action">
           </div>
         </form>
       </div>
@@ -53,17 +53,17 @@
         <form class="forms_form">
           <fieldset class="forms_fieldset">
             <div class="forms_field">
-              <input type="text" placeholder="Full Name" class="forms_field-input" required />
+              <input type="text" id="nameup" placeholder="Full Name" class="forms_field-input" required />
             </div>
             <div class="forms_field">
-              <input type="email" placeholder="Email" class="forms_field-input" required />
+              <input type="email" id="emailup" placeholder="Email" class="forms_field-input" required />
             </div>
             <div class="forms_field">
-              <input type="password" placeholder="Password" class="forms_field-input" required />
+              <input type="password" id="passup" placeholder="Password" class="forms_field-input" required />
             </div>
           </fieldset>
           <div class="forms_buttons">
-            <input type="submit" value="Sign up" class="forms_buttons-action">
+            <input onclick="signup()"  value="Sign up" class="forms_buttons-action">
           </div>
         </form>
       </div>
@@ -72,6 +72,39 @@
 </section>
 <!-- partial -->
   <script  src="./script.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+  <script src="https://www.gstatic.com/firebasejs/8.0.1/firebase-app.js"></script>
+
+  <script src="https://www.gstatic.com/firebasejs/8.0.1/firebase-analytics.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.0.1/firebase-auth.js"></script>
+
+<script src="firebase_auth.js"></script>
+<script>
+    firebase.auth().onAuthStateChanged(function(user) {
+  
+  if (user) {
+    // User is signed in.
+
+    
+    
+
+    var user = firebase.auth().currentUser;
+    if(user != null){
+        var email_id = user.uid;
+       
+       window.location.href = "main/main-card.html";
+    }
+
+
+
+  } else {
+    // No user is signed in.
+ console.log('hey eroor');
+    
+  }
+});
+</script>
 
 </body>
 </html>
