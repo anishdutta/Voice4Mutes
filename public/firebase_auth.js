@@ -41,7 +41,7 @@
         user.updateProfile({
             displayName: name
         }).then(function() {
-            alert('success');
+            window.location.href = "main/main-card.html";
             // Update successful.
         }, function(error) {
             // An error happened.
@@ -55,7 +55,7 @@
         if (errorCode == 'auth/weak-password') {
             alert('The password is too weak.');
         } else {
-            console.error(error);
+            alert(error);
         }
         // [END_EXCLUDE]
     });
