@@ -1,4 +1,4 @@
-# Voice4mutes   <a href="https://ibb.co/nMFzH9X"><img src="https://i.ibb.co/Ld3nLmT/hackforgood-f481a9fe.gif" align="right" width="100px" alt="hackforgood-f481a9fe" border="0"></a>
+# Voice4mutes   <a href="https://ibb.co/ZBqXs2t"><img src="https://i.ibb.co/YcHQ90Y/Hackathon.png" align="right" width="100px" alt="Hackathon" border="0"></a>
 
 ## TABLE OF CONTENTS
 
@@ -29,5 +29,5 @@ b) Learn And Translate
 
 <a href="https://ibb.co/vPpL8By"><img src="https://i.ibb.co/Nj5Wz3D/1st-page.jpg" alt="1st-page" border="0"></a>
 
-## ML/DL Model.
+## ML/DL Model
 
