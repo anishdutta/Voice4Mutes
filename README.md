@@ -34,4 +34,4 @@ b) Learn And Translate
 For our deeplearning models we have used ResNetV2 for transferlearning. We used openCV to make predictions and have made use of flask to deploy our model.
 The training accuracy of the model was 93% and the validation/testing accuracy is 88%. The training and testing split is 70:30.The model is best run in white background.
 
-
+<a href="https://ibb.co/86Zh0Fr"><img src="https://i.ibb.co/r4rWmnx/Whats-App-Image-2020-11-16-at-1-35-31-AM.jpg" alt="Whats-App-Image-2020-11-16-at-1-35-31-AM" border="0"></a>
