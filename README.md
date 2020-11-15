@@ -29,5 +29,5 @@ b) Learn And Translate
 
 <a href="https://ibb.co/vPpL8By"><img src="https://i.ibb.co/Nj5Wz3D/1st-page.jpg" alt="1st-page" border="0"></a>
 
-## ML/DL Model
+## ML/DL Model.
 
