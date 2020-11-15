@@ -1,0 +1,114 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-image: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+  font-family: 'Lato', sans-serif;
+}
+
+.quiz {
+  width: 80%;
+  margin: auto;
+  background-color: white;
+  box-sizing: border-box;
+  box-shadow: 0 0 2px black;
+  display: flex;
+  flex-direction: column;
+  padding: 4em 2em 4em;
+}
+
+.stem {
+  font-size: 3em;
+  text-align: center;
+  margin: 0 auto 1.2em;
+}
+
+.choice-flexbox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.options {
+  width: 60%;
+  font-size: 1.5em;
+  color: white;
+  background-color: lightseagreen;
+  margin: 0.2em;
+  border-radius: 8px;
+  padding: 0.5em;
+}
+
+.progress {
+  width: 100%;
+  padding-top: 2em;
+  margin-top: 2em;
+}
+
+#progress {
+  width: 100%;
+}
+
+.refresh {
+  font-size: 1.5em;
+  color: white;
+  background-color: lightseagreen;
+  margin: 0.2em;
+  border-radius: 8px;
+  margin-top: 1em;
+  padding: 0.5em;
+  width: 150px;
+  text-align: center;
+}
+
+.refresh:hover {
+  transform: scale(1.02);
+  box-shadow: 0 3px 4px black, inset 0 0 4px grey;
+  cursor: pointer;
+}
+
+.refresh:focus {
+  outline: none;
+}
+
+@media only screen and (max-width: 1200px) {
+  .quiz {
+    width: 100%;
+  }
+  .progress {
+    width: 100%;
+    padding-top: 1em;
+    margin-top: 1em;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  .quiz {
+    padding: 0.5em 1em 0.5em;
+  }
+  .stem {
+    font-size: 2em;
+  }
+  .options {
+    font-size: 1.2em;
+    width: 80%
+  }
+  .progress {
+    width: 100%;
+    padding-top: 0.7em;
+    margin-top: 0.7em;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .options:hover {
+    transform: scale(1.02);
+    box-shadow: 0 3px 4px black, inset 0 0 4px grey;
+    cursor: pointer;
+  }
+  .options:focus {
+    outline: none;
+  }
+}
