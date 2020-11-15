@@ -1,4 +1,4 @@
-# Voice4mutes
+# Voice4mutes   <a href="https://ibb.co/nMFzH9X"><img src="https://i.ibb.co/Ld3nLmT/hackforgood-f481a9fe.gif" align="right" width="100px" alt="hackforgood-f481a9fe" border="0"></a>
 
 ## TABLE OF CONTENTS
 
