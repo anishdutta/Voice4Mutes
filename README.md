@@ -1,3 +1,13 @@
 # Voice4Mutes
 
-Website for the deaf and dumb.
+## TABLE OF CONTENTS
+
+1. Overview
+
+2. WebApp
+    
+    a) Login Page
+    
+    b) Learn and Translate
+
+3. About ML/DL models
